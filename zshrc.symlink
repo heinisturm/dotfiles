@@ -1,0 +1,28 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+unsetopt beep
+bindkey -e
+
+alias ll='ls -la'
+alias clickload='ssh -L 127.0.0.1:9666:192.168.1.1:9666 mab -N'
+
+PATH=${PATH}:/usr/local/sbin:/sbin:/usr/sbin
+
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/andy/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+# this is to get a nice git status prompt
+source ~/dotfiles/zsh-git-prompt/zshrc.sh
+
+#prompt='%B%n@%m:%~ %(!.#.>) %b'
+prompt='%B%n@%m:%~ $(git_super_status) %(!.#.>) %b'
+
+alias fuck='eval sudo "$(fc -ln -1)"'
+
+# End of lines added by compinstall
