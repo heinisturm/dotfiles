@@ -4,6 +4,9 @@ title.full.path=2
 # Show toolbar and statusbar
 #toolbar.visible=0
 #statusbar.visible=0
+toolbar.visible=1
+toolbar.usestockicons=0
+statusbar.visible=0
 
 # Maximum number of tabs
 #buffers=40
@@ -56,3 +59,23 @@ edge.column=80
 
 # Make Python quotes foldable (useful for docstrings)
 fold.quotes.python=1
+
+
+# Global default styles for all languages
+style.*.32=fore:#CCCCCC,back:#333333,font:Bitstream Vera Sans Mono,size:12
+
+# Line number
+style.*.33=fore:#E4E4E4,back:#333333,$(font.base)
+
+# Output pane
+style.errorlist.32=back:#333333,fore:#ff0000,font:Bitstream Vera Sans Mono,size:11
+style.errorlist.4=fore:#333333
+
+# Variable dereferencing %varName%
+style.ahk1.9=$(style.ahk1.8),back:#eeeeee,bold
+
+
+# Error (unclosed string, unknown operator, invalid dereferencing, etc.)
+style.ahk1.20=back:#333333,fore:#ff0000
+
+
